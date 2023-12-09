@@ -1,0 +1,111 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date de contact</title>
+<link rel="stylesheet" href="style3.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<script src="indext.js" defer=></script>
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("kabbNV8rmEqDb-YXd");
+      })();
+    </script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="blibliografie.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="acasa.html">Acasă</a></li>
+                    <li><a href="regat.html">Roma Regală</a></li>
+                    <li><a href="republica.html">Republica romană </a></li>
+                    <li><a href="imperiu.html">Imperiul roman</a></li>
+                    <li><a href="decadere.html">Moștenirea culturală</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Date de contact</h1>
+    </section>
+    
+    
+<!------- Contact Us ------->
+
+    
+    <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4399295686244!2d28.015141615510682!3d45.42063244437058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dec22bd930df%3A0x302fd328ced29984!2sLiceul%20Teoretic%20Dun%C4%83rea!5e0!3m2!1sro!2sro!4v1677584297693!5m2!1sro!2sro" width="720" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    
+    <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Liceul Teoretic Dunarea </h5>
+                            <p>Strada Iasomiei 6, Galați 800402, România</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>0746411226</h5>
+                            <p>De luni până sâmbătă între orele 10 & 18</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>petrutudorie@gmail.com</h5>
+                            <p>Nu ezitați să ne contactați</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <input type="text" class="form-control"id="name" placeholder="Introdu Numele"/>
+                    <input type="email" class="form-control" id="email" placeholder="Introdu Mailul"/>
+                    <textarea rows="8" class="form-control" id="message" placeholder="Mesajul" required></textarea>
+                    <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+                    </form> 
+                </div>
+            </div>
+    </section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>Despre noi </h4>
+        <p>Material realizat cu ocazia organizării și desfășurării concursului național<br>"Istorie și societate în dimensiune virtuală"</p>
+        <div class="icons">
+        <a href="https://m.facebook.com/people/Petru-Tudorie/100088332401769/" i class="fa fa-facebook"></a>
+        <a href="https://twitter.com/TudoriePetru"i class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/petru.tudorie/" i class="fa fa-instagram"></a>
+        <a href="" iclass="fa fa-linkedin"></a>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by Petru Tudorie</p>
+</section>     <!-------- footer ---------->
+
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    
